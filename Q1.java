@@ -36,9 +36,31 @@ class FindPairs {
 
     // Test
     public static void main(String[] args) {
-        int arr1[] = {1, 0, -4, 7, 6, 4};
-        int arr2[] = {0, 2, 4, -3, 2, 1};
+        int arr1[] = {5, 7, -4, 6, 3, 2};
+        int arr2[] = {4, 2, -4, 1, 2, 1};
         int x = 8;
         printAllPairs(arr1, arr2, x);
     }
 }
+
+/*
+int arr1[] = {5, 7, -4, 6, 3, 2};
+int arr2[] = {4, 2, -4, 1, 2, 1};
+int x = 8;
+Array_1_Position    Array_2_Position
+3                     1
+1                     3
+3                     4
+1                     5
+
+
+int arr1[] = {5, 7, -4, 6, 3, 2};
+int arr2[] = {4, 2, -4, 1, 2, 1};
+int x = 7;
+Array_1_Position    Array_2_Position
+4                     0
+0                     1
+3                     3
+0                     4
+3                     5
+ */
