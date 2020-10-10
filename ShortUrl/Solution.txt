@@ -1,0 +1,9 @@
+Creating a database table to store short url for each long url using some hashing.
+
+Table Short_Url(
+  ID : int PRIMARY_KEY AUTO_INC,
+  Original_url : varchar,
+  Short_url : varchar
+)
+
+Retrieve the short url and send to the client. When client hits the url redirect him to the long url.
