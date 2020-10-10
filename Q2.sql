@@ -13,7 +13,7 @@ create table users
 {
     id serial primary key not null,
     name text,
-    email text,
+    email varchar(255),
     password text,
     status varchar(10),
     created_at timestamp not null,

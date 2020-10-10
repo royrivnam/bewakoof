@@ -1,7 +1,8 @@
 Creating a database table to store short url for each long url using some hashing.
 
 Table Short_Url(
-  ID : int PRIMARY_KEY AUTO_INC,
+  ID : bigint PRIMARY_KEY AUTO_INC,
+  Hash: varchar,
   Original_url : varchar,
   Short_url : varchar
 )
