@@ -4,7 +4,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Url
+public class ShortUrl
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -13,9 +13,9 @@ public class Url
     private String shortUrl;
     private String longUrl;
 
-    protected Url() {}
+    protected ShortUrl() {}
 
-    public Url(String hash, String shortUrl, String longUrl)
+    public ShortUrl(String hash, String shortUrl, String longUrl)
     {
         this.hash = hash;
         this.shortUrl = shortUrl;

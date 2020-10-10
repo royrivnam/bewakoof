@@ -1,6 +1,6 @@
 import org.springframework.data.repository.CrudRepository;
 
-public interface UrlRepository extends CrudRepository<Url, Long>
+public interface UrlRepository extends CrudRepository<ShortUrl, Long>
 {
-    public Url findOneByHash(String hash);
+    public ShortUrl findOneByHash(String hash);
 }

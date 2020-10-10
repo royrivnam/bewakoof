@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.echelon.ims.presence.shorturl.entity.Url;
-import com.echelon.ims.presence.shorturl.entity.UrlRepository;
+import shorturl.entity.ShortUrl;
+import shorturl.entity.UrlRepository;
 import com.google.common.hash.Hashing;
 
 @RestController
@@ -44,8 +44,8 @@ public class UrlController
        {
            response.sendError(HttpServletResponse.SC_BAD_REQUEST);  // HTTP 400
        }
-              
-       Url url = urlRepository.findOneByHash(hash);
+
+       ShortUrl url = urlRepository.findOneByHash(hash);
        
        if (url == null)
        {
@@ -80,7 +80,7 @@ public class UrlController
         }
         
         String shortUrl = baseUrl + hash;
-        urlRepository.save(new Url(hash, shortUrl, longUrl));
+        urlRepository.save(new ShortUrl(hash, shortUrl, longUrl));
         return new ResponseEntity<String>(shortUrl, HttpStatus.CREATED);  // HTTP 201
     }
 
