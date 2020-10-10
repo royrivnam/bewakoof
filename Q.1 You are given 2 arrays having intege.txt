@@ -1,0 +1,11 @@
+Q.1 You are given 2 arrays having integer values. Write a function to find out the indices
+whose summation is X.
+
+Q.2 Design a database structure for below use case –
+
+I have content split in Movies, Shows, Live Channels, Premium Content. Users can subscribe to
+any specific or group of contents. I also want an option to create combo plans and give offers
+accordingly. Offers can be for 3/6/12/24 months or even unlimited. Users can renew to a
+different type of subscription when expiry is aboutto reach.
+
+Q.3 Design a URL Shortening service like TinyURL
