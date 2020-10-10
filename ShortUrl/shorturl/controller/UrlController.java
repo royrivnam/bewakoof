@@ -20,6 +20,7 @@ import shorturl.entity.ShortUrl;
 import shorturl.entity.UrlRepository;
 import com.google.common.hash.Hashing;
 
+@CrossOrigin("*")
 @RestController
 public class UrlController
 {
