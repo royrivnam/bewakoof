@@ -1,5 +1,3 @@
-package com.echelon.ims.presence;
-
 import org.apache.commons.validator.routines.UrlValidator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
