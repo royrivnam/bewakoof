@@ -1,4 +1,4 @@
-package com.echelon.ims.presence.shorturl.entity;
+package com.shorturl.entity;
 
 import org.springframework.data.repository.CrudRepository;
 

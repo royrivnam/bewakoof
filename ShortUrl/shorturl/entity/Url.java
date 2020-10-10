@@ -1,4 +1,4 @@
-package com.echelon.ims.presence.shorturl.entity;
+package com.shorturl.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
