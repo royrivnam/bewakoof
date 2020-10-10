@@ -15,6 +15,7 @@ create table users
     name text,
     email text,
     password text,
+    status varchar(10),
     created_at timestamp not null,
     updated_at timestamp not null
 
@@ -43,3 +44,4 @@ create table subscriptions
 
 CREATE INDEX IF NOT EXISTS index_on_content_name ON content(name);
 CREATE INDEX IF NOT EXISTS index_on_users_email ON users(email);
+CREATE INDEX IF NOT EXISTS index_on_subscriptions_offer_name ON subscriptions(offer_name);
